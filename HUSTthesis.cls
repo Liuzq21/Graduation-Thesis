@@ -33,7 +33,7 @@
 % draftformat, finalformat
 %
 %    提交草稿打开 draftformat 选项，提交最终版打开 finalformat 选项。
-%    草稿正文页包括页眉（“华中科技大学博士学位论文”），页眉修饰线（双线）。
+%    草稿正文页包括页眉（“华中科技大学硕士学位论文”），页眉修饰线（双线）。
 %    页脚（页码），页脚修饰线（单线）。
 %    最终版正文页不包括页眉、页眉修饰线和页脚修饰线，仅包含页脚。
 %
@@ -226,7 +226,7 @@
 \def\thu@define@fontsize#1#2{%
   \expandafter\newcommand\csname #1\endcsname[1][\baselinestretch]{%
     \thu@choosefont{##1}{#2}}}
-\thu@define@fontsize{dachu}{45pt} %used for the cover 博士学位论文
+\thu@define@fontsize{dachu}{45pt} %used for the cover 硕士学位论文
 \thu@define@fontsize{chuhao}{42pt}
 \thu@define@fontsize{xiaochu}{36pt}
 \thu@define@fontsize{yihao}{26pt}
@@ -1158,7 +1158,7 @@
   }
 
 
-% 定义封底的“攻读博士学位期间取得的研究成果”
+% 定义封底的“攻读硕士学位期间取得的研究成果”
 \newenvironment{publications}{
   %  \clearpage
    \phantomsection
@@ -1166,15 +1166,15 @@
    \markboth{\HUST@publication@title}{\HUST@publication@title}
    }
 
-% 定义封底的“已发表论文与博士学位论文的关系”
+% 定义封底的“已发表论文与硕士学位论文的关系”
 \newenvironment{paperRelation}{
    \phantomsection
    \chapter{\HUST@paperRelation@title}
    \markboth{\HUST@paperRelation@title}{\HUST@paperRelation@title}
-   % 在此处添加已发表论文与博士学位论文的关系的内容
+   % 在此处添加已发表论文与硕士学位论文的关系的内容
    }
 
-% 定义封底的“攻读博士学位期间参与的科研项目”
+% 定义封底的“攻读硕士学位期间参与的科研项目”
 \newenvironment{project}{
   %  \clearpage
    \phantomsection
@@ -1210,12 +1210,12 @@
 \disabledottedtoc}
 {\end{list}}%%%%%
 
-% 定义封底的“已发表论文与博士学位论文的关系”
+% 定义封底的“已发表论文与硕士学位论文的关系”
 \newenvironment{otherDatas}{
    \phantomsection
    \chapter{\HUST@otherDatas@title}
    \markboth{\HUST@otherDatas@title}{\HUST@otherDatas@title}
-   % 在此处添加已发表论文与博士学位论文的关系的内容
+   % 在此处添加已发表论文与硕士学位论文的关系的内容
    }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1367,7 +1367,7 @@
 \def\HUST@studentno{学号}
 \def\HUST@UDC{学校代码}
 \def\HUST@secrettitle{密级}
-\def\HUST@apply{博士学位论文}
+\def\HUST@apply{硕士学位论文}
 \def\HUST@csubject{学\hfill 科\hfill 专\hfill 业}
 \def\HUST@cauthor{学\hfill 位\hfill 申\hfill 请\hfill 人}
 \def\HUST@csupervisor{指\hfill 导\hfill 教\hfill 师}
@@ -1405,11 +1405,11 @@
 \newcommand{\HUST@backdate}{日\hspace{1em}期：}
 
 \newcommand{\HUST@decision@title}{答辩委员会决议}
-\newcommand{\HUST@publication@title}{攻读博士学位期间取得的研究成果}
-\newcommand{\HUST@paperRelation@title}{公开发表的学术成果与博士学位论文的关系}
-\newcommand{\HUST@patent@title}{攻读博士学位期间申请的发明专利和其他成果}
+\newcommand{\HUST@publication@title}{攻读硕士学位期间取得的研究成果}
+\newcommand{\HUST@paperRelation@title}{公开发表的学术成果与硕士学位论文的关系}
+\newcommand{\HUST@patent@title}{攻读硕士学位期间申请的发明专利和其他成果}
 \newcommand{\HUST@project@title}{攻读学位期间参加的科研项目}
-% \newcommand{\HUST@honor@title}{攻读博士学位期间所获奖励}
+% \newcommand{\HUST@honor@title}{攻读硕士学位期间所获奖励}
 \newcommand{\HUST@denotation@name}{中英文缩写对照表}
 \newcommand{\HUST@otherDatas@title}{其他数据图表或程序}
 
